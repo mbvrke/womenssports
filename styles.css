@@ -1,0 +1,101 @@
+
+
+h1, h2{
+    background-color: navy;
+    text-align: center;
+    color:cornsilk;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 25px;
+}
+h1{
+    font-size: 85px;
+    padding-left:50px;
+    font-weight: bold;
+    display: flex;
+    flex: wrap;
+    @media (max-width: 800px) {
+        font-size: 30px;
+        margin-top: 180px;
+    }
+}
+
+h2{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: navy;
+    background-color: pink;
+    position:fixed;
+    top:0;
+    width:100%;
+    margin: 0;
+
+    @media (max-width: 800px){
+        flex-direction: column;
+        align-items: center;
+        position:center;
+        width:100%;
+        font-size: 12px;
+
+
+    }
+}
+
+.navbar a:hover{
+    background-color:aliceblue;
+    padding: 20px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: navy;
+    background-color:cornsilk;
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: pink;
+    color: navy;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+table, th, td {
+    padding:6px;
+    align-items: center;
+}
+
+th,td {
+    padding: 10px;
+    text-align: left;
+    max-width: 100%;
+    white-space: wrap;
+}
